@@ -39,7 +39,7 @@ To use this template for **_your own resume_**,
 
 ## Need Help / Issues 🆘
 
-If you need help or run into any issues, please feel free to email me at `saifulislam84210@gmail.com`. Or open up an issue here as well. I'm very frequenct in replies and checking for any `GitHub` related notifications.
+If you need help or run into any issues, please feel free to email me at `owaisalikhan2003@gmail.com`. Or open up an issue here as well. I'm very frequenct in replies and checking for any `GitHub` related notifications.
 
 Any and all issues are highly appreciated! ❣❣❣
 
