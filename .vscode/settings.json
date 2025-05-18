@@ -17,5 +17,6 @@
                 "xelatexmk"
             ]
         }
-    ]
+    ],
+    "latex-workshop.latex.outDir": "%DIR%/dist",
 }
