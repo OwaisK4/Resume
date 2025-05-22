@@ -19,4 +19,5 @@
         }
     ],
     "latex-workshop.latex.outDir": "%DIR%/dist",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
 }
