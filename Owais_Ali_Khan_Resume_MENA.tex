@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Saif Ul Islam - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (2nd February, 2022)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% VARIANT: MENA / GCC backend-scaleup track.
+% Differences from Owais_Ali_Khan_Resume.tex:
+%   - Relocation/eligibility line in the header (Gulf employers screen on this).
+%   - Experience bullets reordered to lead with product-backend at scale
+%     (services, APIs, Redis, Kafka, multi-tenant SQL, K8s, CI/CD);
+%     security/CVE work retained but demoted to a single trailing bullet.
+%   - Added JDK 11->17 and Python 3.9->3.11 migrations (ownership signal).
+%   - TensorFlow/Keras moved out of the Backend skills heading into the FYP.
+%
+% REMOVED from this variant (present in the original) -- purely for one-page fit
+% and track relevance; restore any of these if you have room:
+%   - Polaris project (parallel image processing).
+%   - The OCR / file-format extraction bullet from the Securiti AI role.
+%   - IEEE Membership from Volunteering.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Owais Ali Khan}{ \href{https://www.linkedin.com/in/owais-ali-khan-04933b238}{linkedin/in/owais-ali-khan} | \href{https://github.com/OwaisK4}{github.com/OwaisK4} \\
+\href{mailto:owaisalikhan2003@gmail.com}{owaisalikhan2003@gmail.com} | +92 322 392 1437 \\
+{\footnotesize Karachi, Pakistan | \textbf{Open to relocation (GCC) \& remote}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Skills}
+
+    \subsection{Languages}
+    Java \textbullet{} Python \textbullet{} C/C++ \textbullet{} SQL \textbullet{} Go \textbullet{} Bash \textbullet{} Groovy
+    \sectionsep
+
+    \subsection{Backend}
+    REST APIs \textbullet{} Django / DRF \textbullet{} FastAPI \textbullet{} gunicorn \textbullet{} Microservices \textbullet{} Multi-tenant systems
+    \sectionsep
+
+    \subsection{Data \& Messaging}
+    PostgreSQL \textbullet{} MySQL \textbullet{} Redis \textbullet{} Kafka \textbullet{} Elasticsearch
+    \sectionsep
+
+    \subsection{DevOps \& Cloud}
+    Docker \textbullet{} Kubernetes \textbullet{} Jenkins (CI/CD) \textbullet{} AWS (S3, ECS, EKS, ECR) \textbullet{} NGINX \textbullet{} Git \textbullet{} Linux
+    \sectionsep
+
+    \subsection{Reliability \& Security}
+    OOM \& crash-loop RCA \textbullet{} Load testing (Locust) \textbullet{} CVE remediation (Trivy, Grype) \textbullet{} Container hardening
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Education}
+
+    \subsection{FAST NUCES, Karachi}
+    \textbullet{} \descript{Bachelors of Science in Computer Science, CGPA: 3.88}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     ACHIEVEMENTS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Achievements}
+    \textbullet{} \location{Gold Medallist ICPC Asia Topi Regional '24-25 {\footnotesize \textit{\textbf{(National 4th rank)}}}}
+
+    \textbullet{} \location{Silver Medallist ICPC Asia Topi Regional '23-24 {\footnotesize \textit{\textbf{(National 8th rank)}}}}
+
+    \textbullet{} \location{IEEE Xtreme 17.0 {\footnotesize \textit{\textbf{(Global Rank 531/4200)}}}}
+
+    \textbullet{} \location{Rector's List {\footnotesize \textit{\textbf{(Spring '22)}}}}
+
+    \textbullet{} \location{Dean's List {\footnotesize \textit{\textbf{(7 semesters, Fall '21 -- Spring '25)}}}}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     VOLUNTEERING & COMMUNITIES
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Volunteering \& Communities}
+
+    \textbullet{} \location{Student Lab Assistant, DSA {\footnotesize{\textit{\textbf{(Fall '24, Fall '25)}}}}}
+
+    \textbullet{} \location{ACM Devday'25 Mentor {\footnotesize{\textit{\textbf{(Jan '25 - Apr '25)}}}}}
+
+    \textbullet{} \location{Procom'24 Co-head CS Competitions {\footnotesize{\textit{\textbf{(Jan '24 - Mar '24)}}}}}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     COLUMN TWO
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Experience}
+    \runsubsection{\href{https://securiti.ai/}{Securiti AI}}
+    \descript{| Associate Backend Engineer}
+    \location{June '25 - Present | Hybrid}
+    \vspace{\topsep}
+    \begin{tightemize}
+        \item Build and operate backend \textbf{Java} and \textbf{Python} microservices that scan files and \textit{multi-tenant} \textbf{PostgreSQL}/\textbf{MySQL} databases for sensitive data, serving enterprise customers under strict \textit{SLAs}.
+        \item Shipped a new \textbf{gunicorn}-based \textbf{Python} service end-to-end --- multi-stage \textbf{Docker} builds, \textbf{Jenkins} CI/CD and \textbf{Kubernetes} deployment --- increasing pipeline throughput and horizontal scalability.
+        \item Re-architected ephemeral data storage on \textbf{Redis} (hashes over serialized JSON), cutting payload size and retry churn on the hot path.
+        \item Led the \textbf{JDK 11 $\rightarrow$ 17} migration and delivered the \textbf{Python 3.9 $\rightarrow$ 3.11} upgrade across both services, owning the dependency fallout and release-over-release regression validation.
+        \item Root-caused production \textbf{OOMs} via streaming extraction and memory-footprint reduction, and eliminated pod \textit{CrashLoopBackOffs} under scale testing through \textbf{gunicorn} worker-lifecycle fixes.
+        \item Hardened \textbf{Kubernetes} workloads (non-root, read-only FS, dropped capabilities) and drove ongoing \textbf{CVE remediation} across all service images.
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{\href{https://securiti.ai/}{Securiti AI}}
+    \descript{| Software Engineer Intern}
+    \location{June '24 - Aug '24 | Hybrid}
+    \begin{tightemize}
+        \item Engineered high-performance infrastructure for large-scale \textit{regular-expression} matching using \href{https://www.intel.com/content/www/us/en/developer/articles/technical/introduction-to-hyperscan.html}{\textbf{Intel Hyperscan}}, achieving speedups of 2--3 orders of magnitude.
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{\href{https://retrocausal.ai/}{Retrocausal AI}}
+    \descript{| Applied Research Intern}
+    \location{Mar '24 - June '24 | Remote}
+    \begin{tightemize}
+        \item Developed \textit{RESTful} API endpoints and automated reporting workflows using the \textbf{\href{https://www.django-rest-framework.org/}{Django REST Framework}}, with scalable storage and retrieval on \href{https://aws.amazon.com/s3/}{\textbf{Amazon S3}}.
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{\href{https://ldplogistic.com/}{LDP Logistics}}
+    \descript{| IT Support Specialist}
+    \location{June '23 - Sep '23 | Onsite}
+    \begin{tightemize}
+        \item Built and deployed a full-stack \textit{web application} (\href{https://www.djangoproject.com/}{\textbf{Django}}, \href{https://getbootstrap.com/}{\textbf{Bootstrap4}}) for managing electronic \textit{inventory} across local and overseas offices.
+    \end{tightemize}
+    \sectionsep
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     PROJECTS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Projects}
+    \runsubsection{\href{https://github.com/OwaisK4/Inventory_Manager_Django}{LDP Asset Manager}}
+    \descript{| Fullstack Web Application}
+    \location{Summer 2023 | Full Stack Development}
+    \begin{tightemize}
+        \item An inventory-management \textit{web portal} (\textbf{Django}, \textbf{MySQL}, \textbf{MUI}) tracking assets, accessories and licenses across all LDP offices.
+    \end{tightemize}
+    \sectionsep
+
+    \runsubsection{\href{https://github.com/farhanahmed19/LLM-Generated-Text-Detection-MVP}{LLM Text Detector}}
+    \descript{| Final Year Project}
+    \location{Fall 2024, Spring 2025 | Natural Language Processing}
+    \begin{tightemize}
+        \item \textbf{A Hybrid Approach to LLM-generated Text Detection}: combined \href{https://huggingface.co/spaces/evaluate-metric/perplexity}{\textit{cross-perplexity}} scores with a fine-tuned \href{https://en.wikipedia.org/wiki/T5_(language_model)}{\textit{T5}} transformer (\textbf{TensorFlow}/\textbf{Keras}), reaching a 94\% \textbf{F1-score} on a curated dataset.
+    \end{tightemize}
+    \sectionsep
+
+\end{minipage}
+\end{document}
