@@ -1,10 +1,19 @@
 {
-    "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+    "latex-workshop.latex.recipe.default": "latexmk (pdflatex)",
     "latex-workshop.latex.tools": [
         {
             "name": "xelatexmk",
             "command": "xelatex",
             "args": [
+                "-output-directory=dist",
+                "Owais_Ali_Khan_Resume.tex"
+            ]
+        },
+        {
+            "name": "pdflatexmk",
+            "command": "pdflatex",
+            "args": [
+                "-pdf",
                 "-output-directory=dist",
                 "Owais_Ali_Khan_Resume.tex"
             ]
@@ -15,6 +24,12 @@
             "name": "latexmk (xelatex)",
             "tools": [
                 "xelatexmk"
+            ]
+        },
+        {
+            "name": "latexmk (pdflatex)",
+            "tools": [
+                "pdflatexmk"
             ]
         }
     ],
